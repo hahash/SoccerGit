@@ -1,0 +1,71 @@
+<HTML>
+
+<HEAD>
+<TITLE>Registration: Select League</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="white">
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="600">
+<TR HEIGHT="20">
+  <TD BGCOLOR="#CCCCFF" ALIGN="center" VALIGN="center" HEIGHT="20">
+    <B>1) Select League</B>
+  </TD>
+  <TD BGCOLOR="#CCCCCC" ALIGN="center" VALIGN="center" HEIGHT="20">
+    <B>2) Enter Player Info</B>
+  </TD>
+  <TD BGCOLOR="#CCCCCC" ALIGN="center" VALIGN="center" HEIGHT="20">
+    <B>3) Select Division</B>
+  </TD>
+</TR>
+</TABLE>
+
+<FORM ACTION="register" METHOD="POST">
+
+<INPUT TYPE="hidden" NAME="action" VALUE="SelectLeague">
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="5">
+
+<TR>
+  <TD ALIGN="right">League</TD>
+  <TD>
+    <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+    <TR>
+      <TD ALIGN="right">Season:</TD>
+      <TD>
+        <SELECT NAME="season">
+          <OPTION VALUE="UNKNOWN">select...</OPTION>
+          <OPTION VALUE="Spring">Spring</OPTION>
+          <OPTION VALUE="Summer">Summer</OPTION>
+          <OPTION VALUE="Fall">Fall</OPTION>
+          <OPTION VALUE="Winter">Winter</OPTION>
+        </SELECT>
+      </TD>
+      <TD ALIGN="right">Year:</TD>
+      <TD>
+        <SELECT NAME="year">
+          <OPTION VALUE="UNKNOWN">select...</OPTION>
+          <OPTION VALUE="2013">2013</OPTION>
+          <OPTION VALUE="2014">2014</OPTION>
+          <OPTION VALUE="2015">2015</OPTION>
+        </SELECT>
+      </TD>
+    </TR>
+    </TABLE>
+  </TD>
+</TR>
+
+<TR HEIGHT="10"><TD HEIGHT="10" COLSPAN="2"><!-- vertical space --></TD></TR>
+
+<TR>
+  <TD></TD>
+  <TD><INPUT TYPE="submit" VALUE="Continue..."></TD>
+</TR>
+
+</TABLE>
+
+</FORM>
+
+</BODY>
+
+</HTML>

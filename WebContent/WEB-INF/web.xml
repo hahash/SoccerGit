@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ <context-param>
+ 	<param-name>dataDirPath</param-name>
+ 	<param-value>C:/EFI/microsoft/Soccer/apache-tomcat-7.0.81/webapps/SoccerLeague/WEB-INF/data</param-value>
+ </context-param>
+ <listener>
+ 	<listener-class>sl314.web.InitializeDataFiles</listener-class>
+ </listener>
+ <listener>
+ 	<listener-class>sl314.web.ManageLeagueObjects</listener-class>
+ </listener>
+ <servlet>
+ 	<servlet-name>RegistrationController</servlet-name>
+ 	<servlet-class>sl314.web.RegistrationServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>RegistrationController</servlet-name>
+ 	<url-pattern>/register</url-pattern>
+ </servlet-mapping>
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+

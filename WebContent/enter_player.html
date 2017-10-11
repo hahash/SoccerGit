@@ -1,0 +1,63 @@
+<HTML>
+
+<HEAD>
+<TITLE>Registration: Enter Player Info</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="white">
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="600">
+<TR HEIGHT="20">
+  <TD BGCOLOR="#CCCCCC" ALIGN="center" VALIGN="center" HEIGHT="20">
+    <B>1) Select League</B>
+  </TD>
+  <TD BGCOLOR="#CCCCFF" ALIGN="center" VALIGN="center" HEIGHT="20">
+    <B>2) Enter Player Info</B>
+  </TD>
+  <TD BGCOLOR="#CCCCCC" ALIGN="center" VALIGN="center" HEIGHT="20">
+    <B>3) Select Division</B>
+  </TD>
+</TR>
+</TABLE>
+
+<FORM ACTION="register" METHOD="POST">
+
+<INPUT TYPE="hidden" NAME="action" VALUE="EnterPlayer">
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="5">
+
+<TR>
+  <TD ALIGN="right">Name:</TD>
+  <TD><INPUT TYPE="text" NAME="name" SIZE="50"></TD>
+</TR>
+<TR>
+  <TD ALIGN="right">Address:</TD>
+  <TD><INPUT TYPE="text" NAME="address" SIZE="50"></TD>
+</TR>
+<TR>
+  <TD ALIGN="right">City:</TD>
+  <TD>
+    <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+    <TR>
+      <TD WIDTH="50%"><INPUT TYPE="text" NAME="city" SIZE="20"></TD>
+      <TD WIDTH="25%" ALIGN="right">Province: <INPUT TYPE="text" NAME="province" SIZE="10"></TD>
+      <TD WIDTH="25%" ALIGN="right">Postal code: <INPUT TYPE="text" NAME="postalCode" SIZE="5"></TD>
+    </TR>
+    </TABLE>
+  </TD>
+</TR>
+
+<TR HEIGHT="10"><TD HEIGHT="10" COLSPAN="2"><!-- vertical space --></TD></TR>
+
+<TR>
+  <TD></TD>
+  <TD><INPUT TYPE="submit" VALUE="Continue..."></TD>
+</TR>
+
+</TABLE>
+
+</FORM>
+
+</BODY>
+
+</HTML>
